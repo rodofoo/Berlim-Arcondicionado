@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  min-height: 40px;
+  background-color: rgb(22, 42, 155);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 8px 15px;
+}
+.logoNavBar {
+  width: 180px;
+}
+.headerBtnGroup {
+  display: flex;
+  gap: 15px;
+}
+.navBtn {
+  font-size: 16px;
+  padding: 6px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.navBtn:hover {
+  border-bottom: 2px solid black;
+}
+.sectionTitle {
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+.sectionDescription {
+  text-align: center;
+  color: #383838;
+}
+.gridContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px 15px;
+  grid-template-areas: "mainContent sidebarContent";
+  padding: 20px;
+}
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  grid-area: mainContent;
+}
+.categoryCard {
+  width: 280px;
+  height: 330px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.mainCardImg {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+}
+.categoryCard:hover {
+  border-color: rgb(10, 10, 10);
+}
+.mainCategoryCardTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px;
+}
+.mainCategoryCardDescription {
+  padding: 6px;
+}
+.ridContainer {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(79, 129, 206);
+  padding: 10px;
+}
+.ainContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px 15px;
+  grid-area: mainContent;
+}
+.ategoryCard {
+  width: 280px;
+  height: 235px;
+  border: 2px solid transparent;
+  gap: 20px 15px;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.ainCardImg {
+  width: 100%;
+  height: 230px;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
+.ategoryCard:hover {
+  border-color: rgb(10, 10, 10);
+}
+.gridcontainer {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(231, 234, 240);
+}
+.p1 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 30px;
+}
+.p2 {
+  text-align: center;
+  padding-top: 7px;
+  color: #383838;
+}
+.p3 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+}
+.p4 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ainCArdImg {
+  width: 90%;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.p5 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+  color: blue;
+}
+
+.mapa-conteudo {
+  width: 740px;
+  margin: 0 auto;
+
+}
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  min-height: 40px;
+  background-color: rgb(22, 74, 177);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 15px;
+}
+.logoFooter {
+  width: 160px;
+  height: 80px;
+}
+.footerAnchor {
+  color: rgb(68, 52, 158);
+  text-decoration: none;
+}
+@media (max-width: 630px) {
+  .gridContainer {
+    grid-template-areas:
+      "mainContent"
+      "sidebarContent";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .sidebarContent {
+    min-width: auto;
+  }
+  .footerAnchor {
+    font-size: 19px;
+  }
+}
+@media (max-width: 463px) {
+  .header {
+    justify-content: center;
+  }
+  .footer {
+    justify-content: center;
+  }
+}
